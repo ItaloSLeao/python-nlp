@@ -21,6 +21,10 @@
 #
 # Estrutura do conceito:
 # [algo_transformado for item in colecao]
+palavras = ["Mito", "eRlinG", "haAlAnD"]
+minusculas = [palavra.lower() for palavra in palavras]
+print(palavras)
+print(minusculas)
 #
 #
 # Exercicio 2: filtrar palavras
@@ -31,6 +35,9 @@
 #
 # Estrutura do conceito:
 # [item for item in colecao if alguma_condicao]
+lista = ["carro", "caminhao", "trigo", "tigre", "arvore"]
+outra = [item for item in lista if len(item) > 4]
+print(outra)
 #
 #
 # Exercicio 3: limpar uma frase
@@ -44,6 +51,11 @@
 #
 # Estrutura do conceito:
 # texto -> normalizacao -> lista -> filtro -> resultado
+frase = "o rato roeu a roupa do rei de roma e dirigiu um sonic"
+frase = frase.lower()
+palavras = frase.split()
+nova = [palavra for palavra in palavras if len(palavra) > 2]
+print(nova)
 #
 #
 # Exercicio 4: tamanhos das palavras
@@ -56,3 +68,6 @@
 # [valor_calculado for item in colecao]
 
 # Escreva suas solucoes abaixo:
+palavras = ["randon", "veiculo", "longo", "comprimento"]
+tamanho = [len(palavra) for palavra in palavras]
+print(tamanho)
